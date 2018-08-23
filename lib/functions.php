@@ -25,3 +25,12 @@ function _vnl_district_list( $province_id, $district_id, $city_field ) {
     </select>
 	<?php
 }
+
+function _vnl_location_list(){
+    ?>
+    <ul>
+        <li><?php _vnl_province_list( '01', 'province_id' ); ?></li>
+        <li><?php _vnl_district_list( '01', '00', 'district_id' ); ?></li>
+    </ul>
+<?php
+}
